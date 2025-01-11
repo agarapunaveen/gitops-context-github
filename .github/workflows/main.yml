@@ -18,14 +18,19 @@ jobs:
         echo "action_status ${{ github.action_status }}"
 
         echo "base_ref ${{ github.base_ref }}"
+
+        
         
         echo "env ${{ github.env }}"
         echo "event ${{ github.event }}"
         echo "event_name ${{ github.event_name }}"
         echo "event_path ${{ github.event_path }}"
+
+        echo "url_graphql ${{ github.graphql_url }}"
+
+        echo "source_branch ${{ github.head_ref }}" 
         
-        
-        echo "reference_name: ${{ github.ref }}"
+        echo "reference_name ${{ github.ref }}"
         echo "sha_code: ${{ github.sha }}"
         echo "user_name: ${{ github.actor }}"
         echo "workflow_name: ${{ github.workflow }}"
