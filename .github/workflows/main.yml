@@ -1,0 +1,16 @@
+name: github-workflow
+on:
+ push
+jobs:
+ build-trigger:
+   runs-on: ubuntu-latest
+   steps:
+    - name: context-workflow
+      run: |
+        echo: "event_name ${{github.event_name}}"
+        echo: "reference_name: ${{github.ref}}"
+        echo: "sha_code: ${{github.sha}}"
+        echo: "user_name: ${{github.actor}}"
+        echo: "workflow_name: ${{gitbub.workflow}}"
+        echo: "run_id: ${{github.run_id}}"
+        echo: "run_number: ${{github.run_number}}"
