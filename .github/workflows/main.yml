@@ -16,6 +16,14 @@ jobs:
         echo "user_name_id ${{ github.actor_id }}"
         echo "api_url ${{ github.api_url }}"
         echo "action_status ${{ github.action_status }}"
+
+        echo "base_ref ${{ github.base_ref }}"
+        
+        echo "env ${{ github.env }}"
+        echo "event ${{ github.event }}"
+        echo "event_name ${{ github.event_name }}"
+        echo "event_path ${{ github.event_path }}"
+        
         echo "event_name ${{ github.event_name }}"
         echo "reference_name: ${{ github.ref }}"
         echo "sha_code: ${{ github.sha }}"
