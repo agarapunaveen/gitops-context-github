@@ -19,6 +19,14 @@ jobs:
 
         echo "base_ref: ${{ github.base_ref }}"
 
+        echo "env ${{ github.env }}"
+        echo "event ${{ github.event }}"
+        echo "event_name ${{ github.event_name }}"
+        echo "event_path ${{ github.event_path }}"
+        
+        echo "url_graphql ${{ github.graphql_url }}"
+        echo "source_branch ${{ github.head_ref }}" 
+
         echo "job: ${{ github.job }}"
 
         echo "path: ${{ github.path }}"
@@ -36,18 +44,27 @@ jobs:
         echo "run_id: ${{ github.run_id }}"
         echo "run_number: ${{ github.run_number }}"
         echo "no_of_attempt: ${{ github.run_attempt }}" 
-        
-        echo "env ${{ github.env }}"
-        echo "event ${{ github.event }}"
-        echo "event_name ${{ github.event_name }}"
-        echo "event_path ${{ github.event_path }}"
 
-        echo "url_graphql ${{ github.graphql_url }}"
-
-        echo "source_branch ${{ github.head_ref }}" 
-        
-        
+        echo "secret_source_used/not: ${{ github.secret_source }}"
+        echo "server_url: ${{ github.server_url }}"
         echo "sha_code: ${{ github.sha }}"
-        echo "user_name: ${{ github.actor }}"
+
+        echo "token: ${{ github.token }}"
+        echo "trigger_name: ${{ github.triggering_actor }}"
+
         echo "workflow_name: ${{ github.workflow }}"
+        echo "workflow_ref_path: ${{ github.workflow_ref }}"
+        echo "workflow_sha: ${{ github.workflow_sha }}"
+        echo "workspace: ${{ github.workspace }}"
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+       
       
