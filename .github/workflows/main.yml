@@ -24,7 +24,7 @@ jobs:
         echo "event_name ${{ github.event_name }}"
         echo "event_path ${{ github.event_path }}"
         
-        echo "event_name ${{ github.event_name }}"
+        
         echo "reference_name: ${{ github.ref }}"
         echo "sha_code: ${{ github.sha }}"
         echo "user_name: ${{ github.actor }}"
