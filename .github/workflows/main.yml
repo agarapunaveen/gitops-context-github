@@ -19,7 +19,7 @@ jobs:
 
         echo "base_ref: ${{ github.base_ref }}"
 
-        echo "job: ${{ gitbub.job }}"
+        echo "job: ${{ github.job }}"
 
         echo "path: ${{ github.path }}"
 
@@ -30,7 +30,7 @@ jobs:
         echo "repository_name: ${{ github.repository }}"
         echo "repository_id: ${{ github.repository_id }}"
         echo "repository_owner: ${{ github.repository_owner }}"
-        echo "repository_owner_id: ${{ gitub.repository_owner_id }}"
+        echo "repository_owner_id: ${{ github.repository_owner_id }}"
         echo "repo_url: ${{ github.repositoryUrl }}"
         echo "no_of_days: ${{ github.retention_days }}"
         echo "run_id: ${{ github.run_id }}"
