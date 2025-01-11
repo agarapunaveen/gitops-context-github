@@ -7,7 +7,7 @@ jobs:
    steps:
     - name: context-workflow
       run: |
-        echo: "git ${{ github }}"
+        echo "git ${{ github }}"
         echo "event_name ${{ github.event_name }}"
         echo "reference_name: ${{ github.ref }}"
         echo "sha_code: ${{ github.sha }}"
